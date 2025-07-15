@@ -1,2 +1,4 @@
-# 30dayJavascript
-30 days, 1 goal: Learn JavaScript and React, one commit at a time.
+## 🚀 30 Days of JavaScript Challenge
+
+- ✅ Day 1: Intro to JS — alerts, prompts, and conditionals
+- ⏳ Day 2: ...
