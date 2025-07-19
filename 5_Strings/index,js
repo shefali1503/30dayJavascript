@@ -1,0 +1,41 @@
+console.log("this is string's tutorial")
+
+let a="Harry"
+console.log(a)
+console.log(a[0])
+console.log(a[1])
+console.log(a[2])
+console.log(a[3])
+console.log(a[4])
+// console.log(a[5])-undefined
+
+console.log(a.length)
+
+let name_2="Harry";
+let friend="Rohan"
+console.log("his name is " + name_2 +  " his friends name is "+friend)
+console.log(`His name is ${name_2} and his friend name is ${friend}`)//template litersals\
+
+//escape sequence characters
+console.log("HI \"Rohan\" ");//\n,\',\n"
+
+let b="Shivam"
+
+console.log(b.toUpperCase());//function on string
+console.log(b.toLowerCase())
+console.log(b.length)//property of string
+console.log(b.slice(1,4))//from char 1 to 3(4 not included)
+console.log(b.slice(2))//give all characters after index 2including it
+
+let my_name="Shefali Kumari Kumari"
+console.log(my_name.replace("Kumari","Sharma"))//to replace any charcters from the string.also only first occurence is replaced
+
+
+console.log(b.concat(" arora"))//to join strings
+console.log(b.concat(a,my_name))//to join  strings
+
+//strings are immutable same strings will not be changed .New strings are created\
+console.log(b.charAt(2))//character at index 2 
+console.log(b.charCodeAt(2))//unicode of the char at index 2
+console.log(b.split("v"))//split from the given character
+
