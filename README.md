@@ -6,4 +6,5 @@
 - ✅ Day 4: Functions in Js 
 - ✅ Day 5: i)Done a small exercise of making faluty calculator 
             ii)Learnt about strings and their concepts and also solved some problem regarding them
-- ✅ Day 6:Exercise for generating random names of the brand
+- ✅ Day 6:i)Exercise for generating random names of the brand
+            ii)Learnt about js arrays
