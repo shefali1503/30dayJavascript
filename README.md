@@ -8,3 +8,4 @@
             ii)Learnt about strings and their concepts and also solved some problem regarding them
 - ✅ Day 6:i)Exercise for generating random names of the brand
             ii)Learnt about js arrays
+- ✅ Day 7:Calculated factorial of a number using javascript

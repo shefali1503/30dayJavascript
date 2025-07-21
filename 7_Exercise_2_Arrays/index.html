@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //for loop
+        let n = prompt("Enter the number whose factorial you want to count")
+        let fact = 1
+        for (let i = 1; i <= n; i++) {
+            fact = fact * i
+        }
+        console.log(`Factorial of ${n} is ${fact}`)
+
+        //reduce method
+        let a = []
+        for (let i = n; i >= 1; i--) {
+            a.push(i)
+        }
+        const factorial = (a, b) => {
+            return a * b;
+        }
+        console.log(arr.reduce(factorial))
+    </script>
+</body>
+
+</html>
