@@ -10,3 +10,6 @@
             ii)Learnt about js arrays
 - ✅ Day 7:Calculated factorial of a number using javascript
 - ✅ Day 8:Learnt some basic thing about DOM(Document Object Model)
+- ✅ Day 9:Learnt some DOM2 - child and parent node
+
+
