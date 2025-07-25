@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 50px;
+            width: 50px;
+            padding: 5px;
+            margin: 5px;
+            border: 2px black solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+
+    <script>
+        let e = document.querySelectorAll(".box")
+        console.log(e)
+        e[0].style.backgroundColor = "green"
+
+        e[2].style.backgroundColor = "green"
+
+    </script>
+</body>
+
+</html>
