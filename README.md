@@ -12,6 +12,8 @@
 - ✅ Day 8:Learnt some basic thing about DOM(Document Object Model)
 - ✅ Day 9:Learnt some DOM - child and parent node
 - ✅ Day 10:Learnt about accessing id and classes using DOM
+- ✅ Day 11:Completed an exercise to get better understanding of DOM
+
 
 
 
