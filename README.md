@@ -13,6 +13,8 @@
 - ✅ Day 9:Learnt some DOM - child and parent node
 - ✅ Day 10:Learnt about accessing id and classes using DOM
 - ✅ Day 11:Completed an exercise to get better understanding of DOM
+- ✅ Day 12:Learnt about different properties of DOM
+
 
 
 
