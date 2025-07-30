@@ -16,6 +16,7 @@
 - ✅ Day 12:Learnt about different properties of DOM
 - ✅ Day 13:Learnt about event handling in JavaScript
 - ✅ Day 14:Callback functions and Promises in Javascript
+- ✅ Day 15:Async and await in Javascript
 
 
 

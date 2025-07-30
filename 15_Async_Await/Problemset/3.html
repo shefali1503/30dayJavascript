@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 3</title>
+</head>
+
+<body>
+
+    <script>
+        async function promisevalue() {
+            return new Promise((resolve, reject) => {
+                let rand = Math.random()
+                if (rand > 0.5) {
+                    resolve(rand)
+                }
+                else {
+                    setTimeout(() => {
+                        reject(new Error("Your number is rejected"))
+                    }, 3000)
+                }
+            })
+        }
+
+        async function main() {
+
+            try {
+                let a = await promisevalue()
+                console.log(a)
+                console.log('Promise is resolved')
+            }
+            catch(err){
+                console.log(err)
+            }
+            
+        }
+        main()
+    </script>
+
+</body>
+
+</html>

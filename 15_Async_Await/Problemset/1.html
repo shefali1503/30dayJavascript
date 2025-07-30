@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 1</title>
+</head>
+
+<body>
+
+    <script>
+        function loadscript(src) {
+            return new Promise((resolve, reject) => {
+                const script=document.createElement("script")
+                script.src=src
+                script.onload=()=>{
+                    resolve(src)
+                }
+                script.onerror = ()=>{
+                    reject(new Error(`Failed to load script: ${src}`));
+                }
+                document.head.append(script)
+            })
+            
+        }
+        loadscript("https://example.com/your-script.js")
+        .then((value)=>{
+            alert(Value,"is loaded")
+        }).catch((error)=>{
+            alert(error)
+        })
+    </script>
+</body>
+
+</html>
