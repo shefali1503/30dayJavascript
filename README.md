@@ -17,7 +17,7 @@
 - ✅ Day 13:Learnt about event handling in JavaScript
 - ✅ Day 14:Callback functions and Promises in Javascript
 - ✅ Day 15:Async and await in Javascript
-
+- ✅ Day 16:Done few exercise to understand async and await properly
 
 
 
