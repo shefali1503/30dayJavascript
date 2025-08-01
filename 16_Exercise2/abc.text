@@ -1,0 +1,47 @@
+const add_div = async (element) => {
+        await delay_add();
+        let cont = document.createElement('div');
+        cont.innerHTML = element;
+        document.querySelector(".text").append(cont);
+}
+
+async function delay_add(){
+    return new Promise((resolve,reject)=>{
+        setTimeout(() => {
+            resolve()
+        },4000);
+    })
+}
+
+async function main() {
+
+    let dots_blink=setInterval(()=>{
+        let line = document.getElementsByTagName("div")//returns a array of all the div elements present poon the page
+        let last=line[line.length-1]//from all the div elements we have to choose the last one which is being displayed right now on the screen
+        if(last.innerHTML.endsWith("...")){//afterthat we will check that the current div elements innerhtml ends with ... or not if yes then we will seperate it from the rest of the string by using slice methods
+        //Example Cleaning Up ... ====>will become Cleaning Up
+            last.innerHTML=last.innerHTML.slice(0,last.innerHTML.length-3)
+        }
+        else{
+            last.innerHTML=last.innerHTML+"."
+        }
+    },200);
+
+
+    let text = ["Reading your Files",
+        "Password files Detected",
+        "Sending all passwords and personal files to server",
+        "Cleaning up"];
+
+    
+
+    for (const element of text) {
+        await add_div(element)
+    }
+}
+
+main()
+
+
+
+    

@@ -1,0 +1,41 @@
+.card{
+    display: flex;
+    border: 2px solid black;
+    width: 900px;
+    padding: 12px;
+    margin:5px;
+    background-color: black;
+}
+
+img{
+    width: 200px;
+    border-radius: 6px;
+    
+}
+
+.image{
+    position: relative;
+}
+.time{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.678);
+    color: white;
+    bottom:15px;
+    right: 9px;
+    z-index: 10;
+    border-radius: 3px;
+    padding: 2px;
+}
+.text h1{
+    font-family: sans-serif;
+    font-size: 25px;
+    color: white;
+}
+.text p{    
+    color: rgb(59, 46, 46);
+}
+.text h1,p{
+    padding: 0px 0px;
+    margin-left:10px ;
+
+}
