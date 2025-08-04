@@ -1,0 +1,23 @@
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: red;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 550px;
+    height: 100px;
+    font-size: 55px;
+    border: 2px dotted red;
+    font-family: monospace;
+}
+
+.date , .alarm{
+    font-size: 20px;
+    color: lightgray;
+    margin-left: 20px;
+}
+.alarm{
+    cursor: pointer;
+}

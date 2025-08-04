@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Local Storage Demo</title>
+</head>
+<body>
+    <h2>🗃️ Local Storage Example</h2>
+    
+    <label>Apna naam likho:</label>
+    <input type="text" id="nameInput" />
+    
+    <button onclick="saveName()">💾 Save Name</button>
+    <button onclick="showName()">👀 Show Name</button>
+
+    <p id="display"></p>
+
+    <script>
+        // Function to save name to local storage
+        function saveName() {
+            let name = document.getElementById("nameInput").value;
+            // Save to localStorage
+            localStorage.setItem("userName", name);
+            alert("Naam save ho gaya! ✅");
+        }
+
+        // Function to show name from local storage
+        function showName() {
+            let savedName = localStorage.getItem("userName");
+            if (savedName) {
+                document.getElementById("display").innerText = "Saved naam hai: " + savedName;
+            } else {
+                document.getElementById("display").innerText = "Koi naam saved nahi hai!";
+            }
+        }
+    </script>
+
+</body>
+</html>

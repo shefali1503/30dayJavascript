@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //generate a random no from (1 to 100)and store it in a variable.
+        //program takes an input from the user to tell them whether the guess was correct ,greater or lesser than orignal number
+        //100-(no of guesses id the score of the user)
+        //program is expected to terminated once the number is guessed 
+
+        //Step 1 -- GENERATE RANDOM NUMBER
+        let rand = Math.floor(Math.random() * 100) + 1;//random number(1-100) 
+        let guessCount = 0
+
+        let number = parseInt(prompt("Guess a number between 1 and 100:"));
+
+        while (rand != number) {
+            guessCount++;
+            if (rand < number) {
+                alert("Your guess is high")
+            }
+            else {
+                alert("Your guess is low")
+            }
+            number = parseInt(prompt("Try again:"));
+        }
+
+
+
+        guessCount++; // Count the correct guess too
+        alert("🎉 Yippee! You guessed the number correctly.");
+        alert(`✅ Your score is: ${100 - guessCount}`);
+
+
+
+    </script>
+</body>
+
+</html>

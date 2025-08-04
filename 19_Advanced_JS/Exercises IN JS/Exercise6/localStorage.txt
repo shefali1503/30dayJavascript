@@ -1,0 +1,14 @@
+1. localStorage object:
+The localStorage object is part of the Web Storage API and provides methods for storing and retrieving data
+
+
+2. Storing data: setItem(key ,value)
+The setItem() method is used to store data. It takes two arguments: the key (a string) and the value (also a string). If you need to store JavaScript objects, you'll need to convert them to strings using JSON.stringify() before storing and parse them back using JSON.parse() when retrieving, according to Stack Abuse. 
+
+
+3. Retrieving data:getItem(key)
+The getItem() method retrieves data using the key. It returns the value associated with the key as a string. 
+
+
+4. Removing data:removeItem(key,value)
+The removeItem() method removes a specific key-value pair, while clear() removes all data stored in the localStorage for that domain. 
