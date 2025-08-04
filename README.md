@@ -20,6 +20,8 @@
 - ✅ Day 16:Done few exercise to understand async and await properly
 - ✅ Day 17:Completed error handling in JS
 - ✅ Day 18:Learnt Object Oriented Concepts in JS
+- ✅ Day 19:Solved some question on advanced js concepts
+
 
 
 
