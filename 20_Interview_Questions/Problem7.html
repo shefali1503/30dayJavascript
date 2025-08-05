@@ -1,0 +1,52 @@
+ <!-- The Local Storage Manager: You are working on a note-taking app, and you want to implement a function named saveNoteToLocalStorage that takes a note object and saves it to the browser's local storage. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage Manager</title>
+</head>
+<body>
+        <h1>Notes</h1>
+        <input type="text" placeholder="Enter your note" id="note-text">
+        <button id="btn">Save note</button>
+        <ul class="notes-list">
+
+        </ul>
+
+
+        <script>
+            window.addEventListener("DOMContentLoaded",function(){
+                let notes =JSON.parse(localStorage.getItem("notes")) || []
+                notes.forEach(element => {
+                    shownote(element)
+                });
+            })
+
+            document.getElementById("btn").addEventListener("click",function(){
+                let noteInput = document.querySelector("#note-text")
+                let note = noteInput.value.trim()
+
+                if(note != ""){
+                    shownote(note);
+                    savenote(note);
+                    noteInput.value = ""
+                }
+
+            })
+
+            function shownote(note){
+
+                const li = document.createElement("li");
+                li.textContent=note
+                document.querySelector(".notes-list").append(li)
+            }
+            function savenote(note){
+                let notes = JSON.parse(localStorage.getItem("notes")) || []
+                notes.push(note)
+                localStorage.setItem("notes" , JSON.stringify(notes))
+            }
+        </script>
+
+</body>
+</html>
