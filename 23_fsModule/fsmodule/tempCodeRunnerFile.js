@@ -1,0 +1,1 @@
+let a = await fs.readFile("abc.txt")
