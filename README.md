@@ -24,6 +24,7 @@
 - ✅ Day 20:Solved some important intervew questions
 - ✅ Day 21:Js in Backend
 - ✅ Day 22:Learnt Node.js
+- ✅ Day 23:Tried fs module of node.js
 
 
 
