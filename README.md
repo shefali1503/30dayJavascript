@@ -25,6 +25,8 @@
 - ✅ Day 21:Js in Backend
 - ✅ Day 22:Learnt Node.js
 - ✅ Day 23:Tried fs module of node.js
+- ✅ Day 24:Learnt about Express Js
+
 
 
 
